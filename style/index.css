@@ -1,1 +1,14 @@
-/* Add CSS styling here */
+*{
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+    max-width:100%;
+    border:1px solid green;
+  }
+  html{
+    font-size:62.5%;
+  }
+
+
+/*
+background: url("https://images.unsplash.com/photo-1541320729316-d1b75cf6e2e6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2091&q=80"); */
