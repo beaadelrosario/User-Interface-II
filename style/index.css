@@ -133,11 +133,10 @@ footer {
     justify-content:center;
     align-items:center; 
     width:100%;
-    padding:5%;
+    padding:3vh;
 }
 
 .social {
-    padding:15px;
     font-size: 2vh;
     text-transform: uppercase;
     font-weight: bold;
