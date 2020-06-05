@@ -19,7 +19,7 @@ html {
 }
 
 nav {
-    font-size:14px;
+    font-size:2vh;
     display:flex;
     justify-content: flex-end;
 }
@@ -43,7 +43,7 @@ nav #links {
 
 h1 {
     color:black;
-    font-size:30px;
+    font-size:3vh;
     width:50%;
     padding:10px;
     margin-left:8px
@@ -57,15 +57,22 @@ h2 {
 
 }
 
-h3 {
+.button {
     color:black;
-    margin-top: 10px;
-    font-size:20px;
+    font-size:2vh;
     box-sizing:border-box;
     border: 1px solid gold;
     background-color:blanchedalmond;
-    padding: 2px 5px;
-    
+    display: flex;
+    align-self: center;
+    text-align: center;
+    width: 160px;
+    padding-left: 27px;
+    padding-right:5px;
+    margin-top: 10px;
+    margin-left: 1px;
+    margin-right: 1px;
+    margin-bottom: 10px;
 }
 
 .MyName {
@@ -97,7 +104,6 @@ h3 {
 #main-titles {
     display:flex;
     flex-direction:column;
-    text-align: center;
 }
 
 .container {
@@ -109,15 +115,15 @@ h3 {
 #projects {
     display:flex;
     flex-direction:column;
-    justify-content: flex-start;
     padding:2%;
     margin-left: 25%;
     margin-right: 25%;
+    text-align:center;
 }
 
-.project-one .project-two .project-three {
-    display: flex;
-    justify-content: space-around;
+#projects .containter .row-two {
+    display:flex;
+    justify-content: space-evenly;
 }
 
 footer {
@@ -127,6 +133,13 @@ footer {
     justify-content:center;
     align-items:center; 
     width:100%;
-    padding:2%;
+    padding:5%;
+}
+
+.social {
+    padding:15px;
+    font-size: 2vh;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
