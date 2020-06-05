@@ -4,25 +4,26 @@
     padding:0;
     margin:0;
     max-width:100%;
-    border:1px solid white;
+    border:1px solid grey;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-  html{
+html {
     font-size:62.5%;
+    margin:2%;
 }
 
 #links {
     width: 100%;
     display: flex;
     padding:5%;
-    margin-right: 2%;
 }
 
 nav {
     font-size:14px;
     display:flex;
     justify-content: flex-end;
+    margin-right: .5px;
 }
 
 nav #links {
@@ -42,11 +43,24 @@ nav #links {
 }
 
 h1 {
-    color:red;
+    color:black;
     font-size:30px;
     width:50%;
-    margin-left: 2%;
-    margin-top: 1%;
+    padding:10px;
+}
+
+h2 {
+    color:white;
+    font-size:50px;
+    width:auto;
+    padding:10px;
+
+}
+
+h3 {
+    color:black;
+    margin-top: 10px;
+    
 }
 
 .MyName {
@@ -55,5 +69,35 @@ h1 {
     width:100%;
 }
 
-/*
-background: url("https://images.unsplash.com/photo-1541320729316-d1b75cf6e2e6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2091&q=80"); */
+#logo {
+    background: url("https://images.unsplash.com/photo-1541320729316-d1b75cf6e2e6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2091&q=80");
+    background-size: cover;
+    height: 300px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center; 
+    width:100%;
+}
+
+.menu {
+    color:white;
+    background-color:black;
+    border-radius:10%;
+    padding:10px;
+}
+
+header {
+    background-color:blanchedalmond;
+}
+
+#main-titles {
+    display:flex;
+    flex-direction:column;
+    text-align: center;
+}
+
+#project-sections {
+    display:flex;
+    justify-content:space-between;
+}
