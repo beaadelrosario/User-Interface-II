@@ -1,1 +1,378 @@
-/* Add CSS styling here */
+
+*{
+    box-sizing:border-box;
+    /*border: 1px solid grey;*/
+    padding:0;
+    margin:0;
+    max-width: 100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing:1px;
+    vertical-align: baseline;
+}
+
+html {
+    font-size:62.5%;
+}
+
+body{
+    line-height:2;
+    font-size:1.6rem;
+}
+
+p{
+    font-size: 1.8rem;
+    color:rgb(51, 49, 49);
+    /* CSS for paragraphs*/
+}
+
+header {
+    display:flex;
+    max-width:100%;
+}
+
+.header-container{
+    align-items:center;
+    width:100%;
+    /*background-color:orange;*/
+}
+
+#links {
+    display: flex;
+    justify-content: space-around;
+    text-transform: uppercase;
+    font-size:1.8rem;
+    /* CSS for the div around id "links"*/
+    width:50%;
+    /*background-color: pink;*/
+    padding: 0 8px;
+}
+
+.menu {
+    /* CSS for my header top, right menu nav*/
+    color:white;
+    background-color:black;
+    padding-top:1vh;
+    padding-bottom:1vh;
+    padding-left:2vh;
+    padding-right:2vh;
+    border-radius: 5%;
+    width:30%;
+    text-align: center;
+}
+
+.menu:hover {
+    font-style: italic;
+    background-color:rgb(155, 241, 241);
+}
+
+h1 {
+    color:white;
+    font-size:7rem;
+    width:auto;
+    text-transform: uppercase;
+}
+
+h2 {
+    color:black;
+    font-size:4rem;
+    text-transform: uppercase;
+}
+
+.page-title {
+    width:80%;
+    /*background-color:purple;*/
+    padding-left: .5%;
+}
+
+#logo {
+    background: url("https://images.unsplash.com/photo-1541320729316-d1b75cf6e2e6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2091&q=80");
+    background-size: cover;
+    height: 300px;
+    display:flex;
+    justify-content:center;
+    align-items:center; 
+    width: 100%;
+}
+
+#projects-button {
+    color:black;
+    font-size:2rem;
+    text-transform: uppercase;
+    box-sizing:border-box;
+    border: 1px solid black;
+    background-color:blanchedalmond;
+    display: flex;
+    align-self: center;
+    text-align: center;
+    width: 15% 0;
+    padding-top:1vh;
+    padding-bottom:1vh;
+    padding-left:5vh;
+    padding-right:5vh;
+    border-radius: 5%;
+}
+
+#projects-button:hover {
+    font-style: italic;
+    background-color:rgb(155, 241, 241);
+}
+
+#main-titles {
+    display:flex;
+    flex-direction:column;
+    /*background-color: palegreen;*/
+}
+
+#projects {
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    display:flex;
+    justify-content: center;
+    align-content:center;
+    width: 100%;
+    /*background-color: hotpink;*/
+}
+
+.row-two {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: purple;
+}
+
+.project-one, .project-two, .project-three, .project-four, .project-five, .project-six {
+    padding: 1% 1%;
+}
+/*
+.project-one {
+    padding: 1% 1%;
+}
+
+.project-two {
+    padding: 1% 1%;
+}
+
+.project-three {
+    padding: 1% 1%;
+}
+
+.project-four {
+    padding: 1% 1%;
+}
+
+.project-five {
+    padding: 1% 1%;
+}
+
+.project-six {
+    padding: 1% 1%;
+}
+*/
+footer {
+    background-color:blanchedalmond;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center; 
+    width:100%;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+.social {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    align-items:center; 
+    /*background-color:teal;*/
+}
+
+#contact-button {
+    color:black;
+    font-size:2rem;
+    text-transform: uppercase;
+    box-sizing:border-box;
+    border: 1px solid black;
+    border-radius: 5%;
+    background-color: ghostwhite;
+    display: flex;
+    align-self: center;
+    text-align: center;
+    width: 15% 0;
+    padding-top:1vh;
+    padding-bottom:1vh;
+    padding-left:5vh;
+    padding-right:5vh;
+}
+
+#contact-button:hover {
+    font-style: italic;
+    background-color:rgb(155, 241, 241);
+}
+
+img {
+    border-radius: 5%;
+}
+
+/* max width 800px */
+
+@media (max-width:800px) {
+
+    .header-container {
+        width:100%;
+    }
+
+    #links {
+        justify-content: flex-start;
+        width:43%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+
+    .menu {
+        font-size: 1.5rem;
+        border:1px dashed grey;
+        justify-content: space-around;
+    }
+
+    h1{
+        font-size:6.5rem;
+        width:auto;
+    }
+
+    h2 {
+        font-size: 3rem;
+    }
+
+    #projects-button {
+        font-size: 1.7rem;
+    }
+
+    #contact-button {
+        font-size:1.7rem ;
+    }
+    
+    .social {
+        font-size:3vh;
+    }
+    
+   .page-title {
+       width: 70%;
+   }
+}
+
+/* max width 500px */
+
+@media (max-width:500px) {
+    .header-container {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #links {
+        font-size: 3vh;
+        flex-direction: row;
+        justify-content: center;
+        width:64%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+
+    .page-title {
+        display:flex;
+        justify-content: center;
+        width: 70%;
+    }
+
+    #projects-button {
+        font-size: 1.5rem;
+    }
+
+    #contact-button {
+        font-size:1.5rem;
+    }
+
+    h1{
+        font-size:5rem;
+        width:auto;
+    }
+
+    h2 {
+        font-size: 2.8rem;
+    }
+}
+
+/*mobile wireframe*/
+
+@media (max-width:320px) {
+    .header-container{
+        flex-direction: column;
+        justify-content: center;
+        width:100%;
+    }
+
+    .page-title {
+        flex-flow: row nowrap;
+        width:100%;
+        font-size: 6rem;
+    }
+
+    #links {
+        font-size: 1rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /*background-color: red;*/
+        width:100%;
+    }
+
+    .menu {
+        text-align: center;
+        width: 50%;
+    }
+
+    #logo {
+        flex-wrap: nowrap;
+        height: 200px;
+        width:100%;
+    }
+
+    h1{
+        font-size:3.5rem;
+        width:100%;
+        flex-wrap: nowrap;
+    }
+
+    h2 {
+        font-size: 2.9rem;
+    }
+
+    p{
+        font-size: 1.4rem;
+        color:rgb(51, 49, 49);
+        /* CSS for paragraphs*/
+    }
+
+    #projects {
+        background-color: pink;
+    }
+
+/*
+    .row-two {
+        flex-direction: column;
+    }
+*/
+    #projects-button {
+        font-size: 1.5rem;
+    }
+
+    #contact-button {
+        font-size:1.5rem;
+    }
+
+
+}
