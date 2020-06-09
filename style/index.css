@@ -1,7 +1,7 @@
 
 *{
     box-sizing:border-box;
-    border: 1px solid grey;
+    /*border: 1px solid grey;*/
     padding:0;
     margin:0;
     max-width: 100%;
@@ -27,24 +27,24 @@ p{
 
 header {
     display:flex;
-    justify-content:center;
     max-width:100%;
 }
 
 .header-container{
     align-items:center;
     width:100%;
-    background-color:orange;
+    /*background-color:orange;*/
 }
 
 #links {
     display: flex;
     justify-content: space-between;
     text-transform: uppercase;
-    font-size:2vh;
+    font-size:2.5vh;
     /* CSS for the div around id "links"*/
     width:50%;
-    background-color: pink;
+    /*background-color: pink;*/
+    padding: 0 8px;
 }
 
 .menu {
@@ -55,17 +55,18 @@ header {
     padding-bottom:1vh;
     padding-left:2vh;
     padding-right:2vh;
+    border-radius: 5%;
 }
 
-h1 {
+h2 {
     color:black;
-    font-size:7vh;
+    font-size:5vh;
     text-transform: uppercase;
 }
 
 .page-title {
     width:80%;
-    background-color:purple;
+    /*background-color:purple;*/
     padding-left: .5%;
 }
 
@@ -79,16 +80,17 @@ h1 {
     width: 100%;
 }
 
-h2 {
+h1 {
     color:white;
-    font-size:7vh;
+    font-size:8vh;
     width:auto;
     text-transform: uppercase;
 }
 
 #projects-button {
     color:black;
-    font-size:2vh;
+    font-size:2.5vh;
+    text-transform: uppercase;
     box-sizing:border-box;
     border: 1px solid black;
     background-color:blanchedalmond;
@@ -100,12 +102,13 @@ h2 {
     padding-bottom:1vh;
     padding-left:5vh;
     padding-right:5vh;
+    border-radius: 5%;
 }
 
 #main-titles {
     display:flex;
     flex-direction:column;
-    background-color: palegreen;
+    /*background-color: palegreen;*/
 }
 
 #projects {
@@ -116,7 +119,7 @@ h2 {
     justify-content: center;
     align-content:center;
     width: 100%;
-    background-color: hotpink;
+    /*background-color: hotpink;*/
 }
 
 .row-two {
@@ -165,17 +168,19 @@ footer {
     text-transform: uppercase;
     font-weight: bold;
     display:flex;
-    flex-direction:row;
+    flex-direction:column;
     justify-content:space-between;
     align-items:center; 
-    background-color:teal;
+    /*background-color:teal;*/
 }
 
 #contact-button {
     color:black;
     font-size:2.5vh;
+    text-transform: uppercase;
     box-sizing:border-box;
     border: 1px solid black;
+    border-radius: 5%;
     background-color: ghostwhite;
     display: flex;
     align-self: center;
@@ -187,16 +192,37 @@ footer {
     padding-right:5vh;
 }
 
+img {
+    border-radius: 5%;
+}
+
 /* max width 800px */
 
 @media (max-width:800px) {
+
+    header {
+        width:100%;
+    }
+
+    h2 {
+        font-size:6vh;
+    }
     #links {
-        font-size: 3vh;
-        display: block;
-        justify-content: center;
-        width:62%;
+        justify-content: flex-start;
+        width:42%;
         padding-top: 2%;
         padding-bottom: 2%;
+    }
+
+    .menu {
+        font-size: 3vh;
+        border:1px dashed grey;
+        justify-content: space-around;
+    }
+
+    h1{
+        font-size:9vh;
+        width:auto;
     }
 
     #projects-button {
@@ -204,12 +230,16 @@ footer {
     }
 
     #contact-button {
-        font-size:3vh;
+        font-size: 3vh;
     }
     
     .social {
         font-size:3vh;
     }
+    
+   .page-title {
+       width: 70%;
+   }
 }
 
 /* max width 500px */
@@ -217,13 +247,14 @@ footer {
 @media (max-width:500px) {
     header {
         flex-direction: column;
+        justify-content: center;
     }
 
     #links {
         font-size: 3vh;
-        display: block;
+        flex-direction: row;
         justify-content: center;
-        width:70%;
+        width:64%;
         padding-top: 2%;
         padding-bottom: 2%;
     }
@@ -231,9 +262,17 @@ footer {
     .page-title {
         display:flex;
         justify-content: center;
+        width: 70%;
     }
 
     #projects-button {
         font-size: 3vh;
+    }
+
+    h2 {
+        font-size: 6vh;
+    }
+    h1 {
+        font-size: 9vh;
     }
 }
