@@ -1,1 +1,144 @@
-/* Add CSS styling here */
+
+*{
+    box-sizing:border-box;
+    padding:0;
+    margin:0;
+    max-width:100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing:2px;
+}
+
+html {
+    font-size:62.5%;
+}
+
+#links {
+    width: 100%;
+    display: flex;
+    padding:5%;
+}
+
+nav {
+    font-size:2vh;
+    display:flex;
+    justify-content: flex-end;
+}
+
+nav #links {
+    justify-content:space-between;
+    margin-right:6px;
+    padding-left:8px;
+}
+
+.home {
+    border: 2px solid black;
+    padding:5%;
+    display:flex;
+    justify-content: space-between;
+    width:50%;
+    height:20%;
+    text-align: center;
+    align-content:center;
+}
+
+h1 {
+    color:black;
+    font-size:3vh;
+    width:50%;
+    padding:10px;
+    margin-left:8px
+}
+
+h2 {
+    color:white;
+    font-size:50px;
+    width:auto;
+    padding:10px;
+
+}
+
+.button {
+    color:black;
+    font-size:2vh;
+    box-sizing:border-box;
+    border: 1px solid gold;
+    background-color:blanchedalmond;
+    display: flex;
+    align-self: center;
+    text-align: center;
+    width: 160px;
+    padding-left: 27px;
+    padding-right:5px;
+    margin-top: 10px;
+    margin-left: 1px;
+    margin-right: 1px;
+    margin-bottom: 10px;
+}
+
+.MyName {
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+}
+
+#logo {
+    background: url("https://images.unsplash.com/photo-1541320729316-d1b75cf6e2e6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2091&q=80");
+    background-size: cover;
+    height: 300px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center; 
+    width:50%;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.menu {
+    color:white;
+    background-color:black;
+    border-radius:10%;
+    padding:10px;
+}
+
+#main-titles {
+    display:flex;
+    flex-direction:column;
+}
+
+.container {
+    display:flex;
+    align-items:center; 
+    justify-content: space-evenly;
+}
+
+#projects {
+    display:flex;
+    flex-direction:column;
+    padding:2%;
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align:center;
+}
+
+#projects .containter .row-two {
+    display:flex;
+    justify-content: space-evenly;
+}
+
+footer {
+    background-color:blanchedalmond;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center; 
+    width:100%;
+    padding:3vh;
+}
+
+.social {
+    font-size: 2vh;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
