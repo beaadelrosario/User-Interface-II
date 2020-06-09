@@ -38,7 +38,7 @@ header {
 
 #links {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     text-transform: uppercase;
     font-size:1.8rem;
     /* CSS for the div around id "links"*/
@@ -56,6 +56,13 @@ header {
     padding-left:2vh;
     padding-right:2vh;
     border-radius: 5%;
+    width:30%;
+    text-align: center;
+}
+
+.menu:hover {
+    font-style: italic;
+    background-color:rgb(155, 241, 241);
 }
 
 h1 {
@@ -105,6 +112,11 @@ h2 {
     border-radius: 5%;
 }
 
+#projects-button:hover {
+    font-style: italic;
+    background-color:rgb(155, 241, 241);
+}
+
 #main-titles {
     display:flex;
     flex-direction:column;
@@ -126,8 +138,13 @@ h2 {
     display:flex;
     flex-direction: row;
     justify-content: space-evenly;
+    background-color: purple;
 }
 
+.project-one, .project-two, .project-three, .project-four, .project-five, .project-six {
+    padding: 1% 1%;
+}
+/*
 .project-one {
     padding: 1% 1%;
 }
@@ -151,7 +168,7 @@ h2 {
 .project-six {
     padding: 1% 1%;
 }
-
+*/
 footer {
     background-color:blanchedalmond;
     display:flex;
@@ -190,6 +207,11 @@ footer {
     padding-bottom:1vh;
     padding-left:5vh;
     padding-right:5vh;
+}
+
+#contact-button:hover {
+    font-style: italic;
+    background-color:rgb(155, 241, 241);
 }
 
 img {
@@ -231,7 +253,7 @@ img {
     }
 
     #contact-button {
-        font-size: ;
+        font-size:1.7rem ;
     }
     
     .social {
@@ -267,7 +289,11 @@ img {
     }
 
     #projects-button {
-        font-size: 3vh;
+        font-size: 1.5rem;
+    }
+
+    #contact-button {
+        font-size:1.5rem;
     }
 
     h1{
@@ -282,3 +308,71 @@ img {
 
 /*mobile wireframe*/
 
+@media (max-width:320px) {
+    .header-container{
+        flex-direction: column;
+        justify-content: center;
+        width:100%;
+    }
+
+    .page-title {
+        flex-flow: row nowrap;
+        width:100%;
+        font-size: 6rem;
+    }
+
+    #links {
+        font-size: 1rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /*background-color: red;*/
+        width:100%;
+    }
+
+    .menu {
+        text-align: center;
+        width: 50%;
+    }
+
+    #logo {
+        flex-wrap: nowrap;
+        height: 200px;
+        width:100%;
+    }
+
+    h1{
+        font-size:3.5rem;
+        width:100%;
+        flex-wrap: nowrap;
+    }
+
+    h2 {
+        font-size: 2.9rem;
+    }
+
+    p{
+        font-size: 1.4rem;
+        color:rgb(51, 49, 49);
+        /* CSS for paragraphs*/
+    }
+
+    #projects {
+        background-color: pink;
+    }
+
+/*
+    .row-two {
+        flex-direction: column;
+    }
+*/
+    #projects-button {
+        font-size: 1.5rem;
+    }
+
+    #contact-button {
+        font-size:1.5rem;
+    }
+
+
+}
